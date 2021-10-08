@@ -6,20 +6,19 @@ public class Exam {
     int marks;
     Exam()
     {
-        rollno =10;
-        course ="B.tech";
-        marks= 90;
+        rollno =0;
+        course ="Unknown";
+        marks= 0;
     }
-    Exam(int rollno,String course,int marks)
+    public void setvalue(int rollno,int marks)
     {
-        this.rollno=rollno;
         this.marks=marks;
-        this.course=course;
+        this.rollno=rollno;
     }
-    Exam(int rollno) {
-        this.rollno = rollno;
-        course = "MCA";
-        marks = 80;
+    public void setvalue(int rollno,int marks,String course) {
+        this.marks=marks;
+        this.rollno=rollno;
+        this.course=course;
     }
         public void display()
         {
